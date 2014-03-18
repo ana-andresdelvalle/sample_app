@@ -16,6 +16,8 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+
+  gem 'sass-rails', '4.0.1'
   
 end
 
@@ -31,7 +33,6 @@ group :test do
   gem 'wdm', '0.1.0'
 end
 
-gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
@@ -44,4 +45,6 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2' 
+  gem 'sass-rails', '3.2.5'
+
 end
