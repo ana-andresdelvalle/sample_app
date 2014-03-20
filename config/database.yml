@@ -6,10 +6,12 @@ development:
   username: Ana
   password: Casiopea1
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: sample_app_test
   pool: 5
   username: Ana
   password: Casiopea1
+cucumber:
+  <<: *test
