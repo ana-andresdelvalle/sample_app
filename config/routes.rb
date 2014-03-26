@@ -1,8 +1,9 @@
 SampleApp::Application.routes.draw do
   
   resources :users
+  resources :sessions, only:  	[:new, :create, :destroy]
+  resources :microposts, onl: 	[:create, :destroy]
   
-  resources :sessions, only: [:new, :create, :destroy]
   # get "users/new" not needed any more because we have added resources :users 
   root  'static_pages#home'
   
